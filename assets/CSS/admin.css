@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&family=Poppins:ital@1&family=Space+Mono:wght@700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(rgb(20, 20, 20), rgb(10, 10, 10));
+  font-weight: bold;
+}
+.whole-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20%;
+  margin-right: 10%;
+  border: 1px solid white;
+}
+.log-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.log-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  border-radius: 50%;
+}
+.whole {
+  margin-top: 50px;
+}
+h2 {
+  font-size: 25px;
+
+  background-color: aqua;
+}
+button {
+  width: 250px;
+  height: 50px;
+  background-image: linear-gradient(rgb(251, 254, 253), rgb(241, 242, 243));
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  border-style: none;
+  border-radius: 5px;
+}
+.btn {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.cons {
+  margin-top: 10px;
+}
+button:hover {
+  transform: scale(1.2);
+}
+a {
+  text-decoration: none;
+}
+/* phone size */
+@media screen and (max-width: 600px) {
+  .icn {
+    margin-left: 130px;
+  }
+  .icn-1 {
+    margin-left: 40px;
+  }
+}

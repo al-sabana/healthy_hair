@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/CSS/delivery.css" />
+    <title>Account</title>
+  </head>
+  <body>
+    <nav>
+      <img src="../assets/images/new logo.png" width="60" height="60" />
+    </nav>
+
+    <div class="parent-div">
+      <div class="form-container">
+        <h3>Enter your details</h3>
+        <form>
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="last-name" />
+          <input type="nummber" placeholder="Mobile number" />
+          <input type="number" placeholder="pincode" />
+          <input type="textarea" placeholder="Address" />
+          <input type="text" placeholder="city/district" />
+          <select>
+            <option>States</option>
+            <option>Tamilnadu</option>
+            <option>Kerala</option>
+          </select>
+          <input type="text" placeholder="landmark (optional)" />
+          <input type="number" placeholder="Alternate number(optional)" />
+          <button>SAVE AND DELIVER HERE</button>
+        </form>
+      </div>
+      <div class="p-child">
+        <h4>Price details</h4>
+        <div>
+          <h5>Price(1 item) &emsp;&emsp; Rs. 400</h5>
+          <h5>Delivery charges &emsp;&emsp;Free</h5>
+          <hr />
+          <h6>Amount payable &emsp;&emsp;Rs.400</h6>
+        </div>
+        <h4>Payment method</h4>
+        <form class="child">
+          <label><input type="checkbox" />CASH ON DELIVERY</label>
+          <label onclick="exitpop"
+            ><input onclick="openpop()" id="payment" type="checkbox" />ONLINE
+            PAYMENT</label
+          >
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
