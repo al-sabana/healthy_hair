@@ -43,6 +43,7 @@ signup.addEventListener("submit", function (event) {
   let phoneNo = document.getElementById("phone-no").value;
   let password = document.getElementById("password").value;
   let confirmPassword = document.getElementById("confirm-password").value;
+  let u_id = Date.now();
 
   let userDetails = {
     username: userName,
@@ -50,6 +51,7 @@ signup.addEventListener("submit", function (event) {
     phoneNo: phoneNo,
     password: password,
     confirmPassword: confirmPassword,
+    u_id,
   };
 
   for (let i = 0; i < arrayOfUserDetails.length; i++) {
