@@ -17,10 +17,7 @@ function exit_pop() {
 }
 
 //login button
-// function login() {
-//   location.replace("../Pages/Product1.html");
-// }
-///  login ===> sign up
+
 let pop_up = document.querySelector(".signup-pop");
 
 function open_pop() {
