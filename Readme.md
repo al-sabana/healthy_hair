@@ -35,4 +35,7 @@ CRUD For User Features page
 => Create products card/list [completed]
 => Read Product Data For card [completed]
 => Update user details For card [completed]
-=> Deactivate Product details For Card [working] (edited)
+PRODUCT CRUD
+Create product[completed]
+list product[completed]
+update product[working]

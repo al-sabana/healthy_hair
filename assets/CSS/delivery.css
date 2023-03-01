@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&family=Poppins:ital@1&family=Space+Mono:wght@700&display=swap");
+
 nav {
   background-color: black;
   height: 80px;
@@ -118,5 +120,9 @@ select {
   margin-top: -500px;
   margin-left: 700px;
   width: 550px;
-  /* display: none; */
+  display: none;
+}
+button {
+  background-color: black;
+  color: white;
 }

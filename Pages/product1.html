@@ -377,6 +377,7 @@
       </div>
     </footer>
     <script>
+
       let products = [
         {
           productName:  "Ayurvedic hair oil for hair growth - 100ml",
@@ -445,8 +446,22 @@
             alt: "ayurvedic shampoo",
           },
         },
+        {
+          productName: "Alsabana)",
+          cost: 590,
+          image: {
+            src: "../assets/images/GoodHair-Ayurvedic-combo8.webp",
+            alt: "ayurvedic shampoo",
+          },
+        },
       ];
-      for (let i = 0; i <= 7; i++) {
+    const arr =JSON.parse(localStorage.getItem("proObject"))
+    console.log(arr)
+    console.log(arr)
+    for(let i = 0;i<arr.length;i++){
+      products.push(arr[i])
+    }
+      for (let i = 0; i < products.length; i++) {
         let name = products[i];
         let anger_tag = document.createElement("a");
         anger_tag.setAttribute(
@@ -495,6 +510,7 @@
         insert_div.append(anger_tag);
        
       }
+      console.log(products)
 
       let products1 = [
         {
@@ -529,7 +545,16 @@
             src: "../assets/images/caffeine4.webp",
             alt: "shampoo for dandruff",
           },
+         
         },
+        {
+          productsname: "dsajhluiasdc",
+          cost: 550,
+          image: {
+            src: "../assets/images/caffeine4.webp",
+            alt: "shampoo for dandruff",
+          },
+        }
       ];
 
       for (let i = 0; i <= 3; i++) {

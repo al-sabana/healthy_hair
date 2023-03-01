@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/CSS/delivery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <title>Account</title>
   </head>
   <body>
@@ -42,10 +46,14 @@
         </div>
         <h4>Payment method</h4>
         <form class="child">
-          <label><input type="checkbox" />CASH ON DELIVERY</label>
+          <label><input type="radio" name="select" />CASH ON DELIVERY</label>
           <label onclick="exitpop"
-            ><input onclick="openpop()" id="payment" type="checkbox" />ONLINE
-            PAYMENT</label
+            ><input
+              onclick="openpop()"
+              name="select"
+              id="payment"
+              type="radio"
+            />ONLINE PAYMENT</label
           >
         </form>
       </div>
