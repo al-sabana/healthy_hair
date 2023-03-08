@@ -46,11 +46,11 @@
    <div class="personal-info">
      <div class="fst-container">
        <div class="profile">
-          <img src="../assets/images/sabana phto.jpg" width="80" height="80">
+          <img id="user_img" >
        </div>
        <div>
         <p>Hello,</p>
-        <h3>User</h3>
+        <h3 id="user_name"></h3>
           <!-- <input class="url" type="url" placeholder="upload image" /> -->
   
       </div>
@@ -60,7 +60,7 @@
     <div class="personal-container">
       <h5>Personal information</h5> 
     <form class="form" id="proform">
-        <label>Image <input class="url" type="url" placeholder="upload image" />
+        <label>Image <input class="url" id="image" type="text" placeholder="upload image" />
         </label>       
          <label>Name <input type="text" id="username" placeholder="your name" value="Alsabana">
          </label>
@@ -112,7 +112,7 @@
       <div>
         <h3  class="bi bi-caret-right" > My orders</h3>
       </div>
-      <!-- ./// -->
+   
       <!-- <div class="order-container">
         <div>
           <img src="../assets/images/Almond-2.png" width="80" height="80">
@@ -320,7 +320,7 @@
     const userData=JSON.parse(localStorage.getItem("userData"))
 
     let select_user=userData.find(function(event){
-  const customerEmail=event["email"]
+  const customerEmail=event["u_id"]
   if(logEmail===customerEmail){
     return true;
    }
@@ -332,6 +332,10 @@
     const userName=document.getElementById("username")
     const password=document.getElementById("pass")
     const address=document.getElementById("country")
+    let Name=document.getElementById("user_name")
+    Name.innerText=select_user["username"]
+    let userImg=document.getElementById("user_img")
+    userImg.setAttribute("src",select_user["image"])
 
 
     email.value=select_user["email"]
@@ -339,6 +343,7 @@
     userName.value=select_user["username"]
     password.value=select_user["password"]
     address.value=select_user["address"]
+
 
 
     const form=document.getElementById("proform")
@@ -352,10 +357,12 @@
       let phoneNo=document.getElementById("phNo").value
       let password=document.getElementById("pass").value
       let address=document.getElementById("country").value
+      let image=document.getElementById("image").value
+
      
 
  let newData={
-      username,email,phoneNo,password,address
+      username,email,phoneNo,password,address,image
      }
     
      const combineData=Object.assign(select_user,newData)
@@ -382,6 +389,6 @@ let delete_user = document.getElementById("delete")
       }
     })
 
-
+   
      </script>
 </html>

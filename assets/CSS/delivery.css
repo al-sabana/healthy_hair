@@ -15,7 +15,7 @@ nav img {
   text-align: center;
   height: 500px;
   margin-left: 50px;
-  box-shadow: 0 10px 20px 10px rgb(216, 215, 215);
+  /* box-shadow: 0 10px 20px 10px rgb(216, 215, 215); */
   border-radius: 5%;
 }
 .form label {

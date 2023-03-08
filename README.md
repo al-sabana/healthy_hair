@@ -39,3 +39,4 @@ PRODUCT CRUD
 Create product[completed]
 list product[completed]
 update product[working]
+delete product[]

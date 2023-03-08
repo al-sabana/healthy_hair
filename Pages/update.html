@@ -12,9 +12,9 @@
       <div class="parent-div">ADD A NEW PRODUCT</div>
       <div class="whole">
         <form id="update-form">
-          <label>product name <input type="text" id="pName" /></label>
-          <label>product price<input type="number" id="pPrice" /></label>
-          <label>image<input type="text" id="pImage" /></label>
+          <label>Product name <input type="text" id="pName" /></label>
+          <label>Product price<input type="number" id="pPrice" /></label>
+          <label>Image<input type="text" id="pImage" /></label>
           <label>Description<input type="textarea" id="pDescription" /></label>
           <button type="submit">ADD</button>
         </form>
@@ -40,9 +40,10 @@
           image: { src, alt },
         };
         productArray.push(proObject);
-        console.log(productArray);
+        // console.log(productArray);
         stringProduct = JSON.stringify(productArray);
         localStorage.setItem("proObject", stringProduct);
+        window.location.href = "./admin.html";
       });
     </script>
   </body>

@@ -100,7 +100,7 @@ loginForm.addEventListener("submit", function (event) {
     ) {
       isExist = true;
       userArray.push(login_data[i]);
-      localStorage.setItem("login", JSON.stringify(login_data[i]["email"]));
+      localStorage.setItem("login", JSON.stringify(login_data[i]["u_id"]));
 
       break;
     } else {
