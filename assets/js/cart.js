@@ -60,8 +60,9 @@ function addCart() {
   location.reload();
 }
 let cartArray = [];
-
-let getItem = JSON.parse(localStorage.getItem("items"));
+if (localStorage.getItem("items") != null) {
+  cartArray = JSON.parse(localStorage.getItem("items"));
+}
 // console.log(getItem);
 for (let i = 0; i < cartArray.length; i++) {
   document.getElementById("pro").innerHTML = getItem.title;
@@ -69,3 +70,4 @@ for (let i = 0; i < cartArray.length; i++) {
   document.getElementById("im").src = getItem.image;
   cartArray.push(item);
 }
+console.log(cartArray);
