@@ -38,5 +38,6 @@ CRUD For User Features page
 PRODUCT CRUD
 Create product[completed]
 list product[completed]
-update product[working]
-delete product[]
+update product[completed]
+delete product[completed]
+ORDER CRUD
